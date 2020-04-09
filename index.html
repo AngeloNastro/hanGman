@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img\hanGman_logo.png">
+    <title>hanGman</title>
+  </head>
+  <body ondragstart="return false;" ondrop="return false;">
+        <h1 class=" noselect">hanGman</h1>
+        <h5 id="cheater"></h5>
+    <div class="game-container">
+      <svg height="250" width="200" class="figure-container">
+        <!-- Rod -->
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="140" y1="20" x2="140" y2="50" />
+        <line x1="60" y1="20" x2="60" y2="230" />
+        <line x1="20" y1="230" x2="100" y2="230" />
+        <!-- Head -->
+        <circle cx="140" cy="70" r="20" class="figure-part" />
+        <!-- Body -->
+        <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+        <!-- Arms -->
+        <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+        <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+        <!-- Legs -->
+        <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+        <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+      </svg>
+
+      <div class="wrong-letters-container">
+        <div id="wrong-letters"></div>
+      </div>
+
+      <div class="word" id="word"></div>
+    </div>
+
+    <!-- Container for final message -->
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <h2 id="final-message"></h2>
+        <button id="play-button">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification-container" id="notification-container">
+      <p>You have already entered this letter</p>
+    </div>
+
+    <!-- RIGHT-MENU -->
+    <div class="fixed-action-btn" id="buttons">
+      <a href="#" class="hoverable btn-floating waves-effect grey btn-large"><i class="large material-icons">expand_less</i></a>
+      <ul>
+        <li><a href="" class="hoverable btn-floating waves-effect blue btn-large tooltipped" data-position="left" data-tooltip="Reload"><i class="large material-icons">refresh</i></a></li>
+        <li><a href="https://uk.linkedin.com/in/angelonastro" target="_blank" class="hoverable btn-floating waves-effect green btn-large tooltipped" data-position="left" data-tooltip="See my profile"><i class="large material-icons">face</i></a></li>
+        <li><a href="#!" class="hoverable btn-floating waves-effect yellow btn-large tooltipped" data-position="left" data-tooltip="Share"><i class="large material-icons" onclick="copyLink(),Materialize.toast('Link copied', 2500, 'rounded grey')">share</i></a></li>
+      </ul>
+    </div>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
